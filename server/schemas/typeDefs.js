@@ -34,7 +34,7 @@ type Auth{
     addUser(username: String!, email: String!, password: String!): Auth
 
     saveBook: (
-        [author]
+        author: [String]
         description: String
         title: String
         bookId: String

@@ -41,7 +41,7 @@ const resolvers = {
                 return User.findOneAndUpdate(
                     { _id: bookId },
                     {
-                        $addToSet: { bookStore: book },
+                        $addToSet: { bookStore: Book },
                     },
                     {new: true},
                 );
